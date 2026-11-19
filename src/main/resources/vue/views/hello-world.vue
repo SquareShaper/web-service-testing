@@ -1,11 +1,7 @@
 <template id="hello-world">
-  <h1 class="hello-world">Hello, World!</h1>
+  <frog-style>
+    <h1>Hello, World!</h1>
+  </frog-style>
 </template>
-<script>
-  app.component("hello-world", {template : "#hello-world"});
-</script>
-<style>
-  .hello-world {
-    color: hotpink;
-  }
-</style>
+<script>app.component("hello-world", {template: "#hello-world"});</script>
+<style></style>

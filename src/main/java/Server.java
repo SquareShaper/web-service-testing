@@ -10,8 +10,11 @@ void main() {
             vue.vueInstanceNameInJs = "app";
         }));
 
+
         // All the site paths
         config.routes.get("/", new VueComponent("hello-world"));
         config.routes.get("/frog", new VueComponent("frog"));
+        config.routes.get("/todo", new VueComponent("todo-list"));
+
     }).start(7070);
 }
