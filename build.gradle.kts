@@ -15,6 +15,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("io.javalin:javalin:7.2.4")
     implementation("org.slf4j:slf4j-simple:2.0.20")
+    implementation("org.webjars.npm:vue:3.5.45")
 }
 
 tasks.test {
