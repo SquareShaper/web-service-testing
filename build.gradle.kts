@@ -14,6 +14,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("io.javalin:javalin:7.2.4")
+    implementation("org.slf4j:slf4j-simple:2.0.20")
 }
 
 tasks.test {
