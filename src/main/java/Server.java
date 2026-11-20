@@ -3,11 +3,12 @@ import io.javalin.plugin.bundled.JavalinVuePlugin;
 import io.javalin.vue.VueComponent;
 
 void main() {
-    var app = Javalin.create(config -> {
+    Javalin.create(config -> {
         // Initial config - setup Vue
         config.staticFiles.enableWebjars();
         config.registerPlugin(new JavalinVuePlugin(vue -> {
             vue.vueInstanceNameInJs = "app";
+            vue.rootDirectory("/vue");
         }));
 
 
